@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "projectRoot": ".",
+  "wikiRoot": "docs/wiki",
+  "index": "docs/wiki/index.md",
+  "corePrinciples": "docs/wiki/foundations/core-principles.md",
+  "impactMap": "docs/wiki/references/code-document-impact-map.json",
+  "entryPoints": ["README.md", "AGENTS.md", "docs/README.md"],
+  "pullRequestTemplate": ".github/pull_request_template.md",
+  "conflictRegister": "docs/wiki/references/knowledge-conflict-register.md",
+  "documentRelations": "docs/wiki/references/document-knowledge-relations.json",
+  "legacyManifest": "docs/legacy/manifest.json",
+  "agentFile": "AGENTS.md",
+  "skillFile": ".agents/skills/docs-alignment/SKILL.md",
+  "initReport": "docs-alignment.init-report.json",
+  "checkCommand": "npm run docs:check",
+  "checks": {
+    "configuration": true,
+    "frontmatter": true,
+    "links": true,
+    "navigation": true,
+    "sourceOfTruth": true,
+    "impactMap": true,
+    "conflictRelations": true,
+    "legacyManifest": true,
+    "entryPoints": true,
+    "pullRequestTemplate": true
+  }
+}

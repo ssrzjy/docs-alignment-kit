@@ -1,0 +1,12 @@
+{
+  "name": "docs-alignment-minimal-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:impact": "docs-alignment impact",
+    "docs:check": "docs-alignment check"
+  },
+  "devDependencies": {
+    "docs-alignment-kit": "file:../.."
+  }
+}

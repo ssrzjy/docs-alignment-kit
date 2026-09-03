@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "description": "Reciprocal source-level conflict edges. Add both directions for every registered conflict.",
+  "documents": {
+    "README.md": { "relations": [] },
+    "docs/README.md": { "relations": [] },
+    "docs/wiki/roadmap/document-migration.md": { "relations": [] }
+  }
+}

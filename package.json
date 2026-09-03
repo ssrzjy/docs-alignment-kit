@@ -1,0 +1,24 @@
+{
+  "name": "docs-alignment-kit",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Configurable documentation impact analysis and consistency checks for coding-agent workflows.",
+  "bin": {
+    "docs-alignment": "bin/docs-alignment.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./config": "./lib/config.mjs",
+    "./impact": "./lib/impact.mjs",
+    "./check": "./lib/check.mjs",
+    "./init": "./lib/init.mjs",
+    "./scan": "./lib/scan.mjs"
+  },
+  "files": ["bin", "lib", "scripts", "templates", "docs", "examples", ".agents", "README.md", "AGENTS.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "docs:impact": "node bin/docs-alignment.mjs impact",
+    "docs:check": "node bin/docs-alignment.mjs check",
+    "test": "node --test test/*.test.mjs"
+  }
+}

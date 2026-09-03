@@ -1,0 +1,9 @@
+{
+  "changed_paths": ["src/billing/invoice.ts"],
+  "matched_routes": ["application-code"],
+  "required_reading": ["AGENTS.md", "docs/wiki/index.md", "docs/wiki/foundations/core-principles.md"],
+  "maintained_docs_to_review": ["docs/wiki/foundations/project-overview.md"],
+  "machine_contracts_to_review": [],
+  "suggested_verification": ["npm run docs:check", "npm test"],
+  "unmatched_paths": []
+}
