@@ -1,0 +1,8 @@
+- original_path: docs/legacy/example-design.md
+  document_kind: historical-design
+  migration_status: human-review-required
+  current_path: docs/examples/canonical-page.md
+  compiled_into: []
+  conflict_ids:
+    - KCR-EXAMPLE
+  notes: "示例记录；真实项目应使用实际来源、时间和决策。"

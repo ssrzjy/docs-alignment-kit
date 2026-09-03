@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "wikiRoot": "docs/wiki",
+  "index": "docs/wiki/index.md",
+  "corePrinciples": "docs/wiki/foundations/core-principles.md",
+  "impactMap": "docs/wiki/references/code-document-impact-map.json",
+  "entryPoints": ["README.md"],
+  "pullRequestTemplate": null,
+  "conflictRegister": null,
+  "documentRelations": null,
+  "legacyManifest": "docs/legacy/manifest.json",
+  "agentFile": null,
+  "skillFile": ".agents/skills/docs-alignment/SKILL.md",
+  "initReport": "docs-alignment.init-report.json",
+  "checkCommand": "npx docs-alignment check",
+  "checks": {
+    "configuration": true,
+    "frontmatter": true,
+    "links": true,
+    "navigation": true,
+    "sourceOfTruth": true,
+    "impactMap": true,
+    "conflictRelations": false,
+    "legacyManifest": true,
+    "entryPoints": true,
+    "pullRequestTemplate": false
+  }
+}

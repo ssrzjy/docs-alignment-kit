@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "description": "Generic minimum reading, maintained documentation, machine contracts, and verification routes.",
+  "global_reading": [
+    "AGENTS.md",
+    "docs/wiki/index.md",
+    "docs/wiki/foundations/core-principles.md"
+  ],
+  "routes": [
+    {
+      "id": "documentation-tooling",
+      "topics": ["documentation governance", "impact analysis", "migration"],
+      "change_paths": ["bin/**", "scripts/docs-*.mjs", "templates/**", ".agents/**", "docs-alignment.config.json", "docs/wiki/**", "docs/legacy/**", "docs/README.md", "README.md", "AGENTS.md", "package.json", ".github/**"],
+      "required_reading": ["docs/wiki/engineering/documentation-governance.md", "docs/wiki/roadmap/document-migration.md"],
+      "maintained_docs": ["docs/wiki/index.md", "docs/wiki/engineering/documentation-governance.md", "docs/wiki/engineering/installation-and-agent-integration.md", "docs/wiki/roadmap/document-migration.md"],
+      "machine_contracts": ["docs-alignment.config.json", "docs/wiki/references/code-document-impact-map.json", "docs/wiki/references/document-knowledge-relations.json", "package.json"],
+      "verification": ["npm run docs:check", "npm test"]
+    },
+    {
+      "id": "application-code",
+      "topics": ["application behavior", "public or internal contracts"],
+      "change_paths": ["lib/**"],
+      "required_reading": ["docs/wiki/foundations/project-overview.md", "docs/wiki/foundations/core-principles.md"],
+      "maintained_docs": ["docs/wiki/foundations/project-overview.md"],
+      "machine_contracts": [],
+      "verification": ["npm run docs:check", "npm test"]
+    },
+    {
+      "id": "tests-and-examples",
+      "topics": ["verification", "examples", "fixtures"],
+      "change_paths": ["test/**", "examples/**", "docs/examples/**", "docs/getting-started.md"],
+      "required_reading": ["docs/wiki/engineering/documentation-governance.md"],
+      "maintained_docs": ["docs/wiki/engineering/documentation-governance.md"],
+      "machine_contracts": ["package.json"],
+      "verification": ["npm test", "npm run docs:check"]
+    }
+  ]
+}

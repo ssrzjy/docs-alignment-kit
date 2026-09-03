@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "global_reading": ["README.md", "docs/wiki/index.md"],
+  "routes": [
+    {
+      "id": "application",
+      "topics": ["application behavior"],
+      "change_paths": ["src/**"],
+      "required_reading": ["docs/wiki/index.md"],
+      "maintained_docs": ["docs/wiki/index.md"],
+      "machine_contracts": [],
+      "verification": ["npm test"]
+    }
+  ]
+}
